@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/estilos.css"> -->
+    <title>Inscripciones</title>
+</head>
+<body>
+    <header>
+        <!-- Menu de Hamburguesa -->
+        <div id="burguer" class="button">
+            <div class="line"></div>
+        </div>
+        <!-- Menu Completo -->
+        <nav>
+            <ul id="menu" class="menu">
+                <li class="menu__item">  <a href="index.html"><img src="images/logopaginaweb_Mesa de trabajo 1.png" alt="Logo de LuDev"></a></li>
+                <li class="menu__item"><a href="inscripcion.html">Inscripcion</a></li>
+                <li class="menu__item"><a href="consultas.html">Consultas</a></li>
+                <li class="menu__item"><a href="#">Theme</a>
+                    <ul class="menu submenu">
+                        <li class="menu__item">             
+                            <p>selector de tema</p>
+                            <div class="themes">
+                                <div class="theme">
+                                    <input type="radio" name="theme" id="light" checked>
+                                    <label for="light">Claro</label>
+                                </div>
+                                <div class="theme">
+                                    <input type="radio" name="theme" id="dark">
+                                    <label for="dark">Oscuro</label>
+                                </div>
+                        </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper content">
+            <form id="contactar"  method="post">
+                <div class="form">
+                    <h1>Formulario De Registro</h1>
+                    <div class="grupo">
+                        <input type="text" name="nombreeps"  placeholder="Nombre EPS" required><span class="barra"></span>
+                   </div>
+                   <div class="grupo">
+                    <input type="text" name="servicio"  placeholder="Servicio Que Ofrese   " required><span class="barra"></span>
+                   </div>
+                   <div class="grupo">
+                    <input type="text" name="tiempo"  placeholder="Tiempo De Espera En Dias  " required><span class="barra"></span>
+                   </div>
+                    <button type="submit" name="enviar" > Registar </button>
+                </div>
+                </form>
+        </div>
+        </main>
+        <hr>
+        <footer>
+            Equipo Aguacate Explosivo | 2022 
+        </footer>
+    <script src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</body>
+</html>
